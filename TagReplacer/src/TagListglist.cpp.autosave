@@ -1,0 +1,21 @@
+#include "TagList.h"
+
+TagList::TagList(QObject *parent) : QObject(parent)
+{
+
+}
+
+QList<Tag> TagList::items() const
+{
+    return itemList;
+}
+
+bool TagList::setItemAt(int index, const Tag &item)
+{
+    if (index < 0 || index >= itemList.size())
+    {
+        return false;
+    } 
+    const Tag &oldTag = itemList.at(index);
+    if (item.)
+}
